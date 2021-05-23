@@ -10,7 +10,7 @@ export class AppService {
 
   async read() {
     const documents = await model.find();
-    return documents;
+    return { documents };
   }
 
   async update(match, body) {
